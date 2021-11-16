@@ -1,0 +1,123 @@
+ *{
+  margin:0;
+  padding:0;
+  font-family:'Hammersmith one', serif;
+}
+body{
+  height:100vh;
+  background:linear-gradient(to left,#434343, #000000);
+}
+.profile-page{
+  width: 50%;
+  max-width: 600px;
+  height:100%;
+  background:transparent;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color:whitesmoke;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+  transition:all .4s;
+}
+.profile-page:hover{
+  box-shadow: 0 0 50px rgba(0,0,0,0.300);
+}
+.profile-page h1{
+  margin-bottom: 25px;
+  margin-top: 75px;
+}
+.profile-page p{
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.icons{
+  width:250px;
+  display:flex;
+  flex-direction:column;
+  gap:.4rem;
+  margin: 0px 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons a{
+  width: 250px;
+  height: 50px;
+  border: 2px solid #3b5998;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 2px;
+  transition: all .4s;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+}
+.icons a i{
+  color:#3b5998;
+  margin:10px;
+  transition:all .4s;
+}
+.icons a:hover i{
+  color:#e2e2e2;
+}
+.icons a:hover:nth-child(1){
+  background:#3b5998;
+  color:#e2e2e2;
+}
+.icons a:hover:nth-child(2){
+  background: rgb(102,61,201);
+  background: linear-gradient(180deg, rgba(102,61,201,1) 0%, rgba(238,53,119,1) 61%, rgba(243,132,89,1) 100%);
+  color:#e2e2e2;
+}
+.icons a:hover:nth-child(3){
+  background:#5865F2;
+  color:#e2e2e2;
+}
+.icons a:hover:nth-child(4){
+  background:#171515;
+  color:#e2e2e2;
+}
+.icons a:hover:nth-child(5){
+  background: #1DB954;
+  color: #e2e2e2;
+}
+hr{
+    width: 250px;
+    position: relative;
+    padding: 0;
+    border: 0;
+}
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+hr.style01{
+  margin: 5px 0px 15px;
+}
+hr.style02{
+  margin: 15px 0px 10px;
+}
+footer {
+      width: 100%;
+      height: 10vh;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+    }
+@media screen and (max-width: 800px) {
+  .profile-page {
+    width: 80% !important;
+  }
+}
