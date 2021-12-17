@@ -134,7 +134,7 @@
               "type": "chat",
               "content": {
                 "buttonText": "New Conversation",
-                "inputPlaceholder": "Type here and press enter.."
+                "inputPlaceholder": "Ketik disini dan enter ya..."
               }
             },
             {
